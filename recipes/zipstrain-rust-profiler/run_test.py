@@ -1,4 +1,4 @@
-"""Expose the inputs and exact differences without weakening upstream parity."""
+"""Run strict upstream parity in Conda's fixture-aware test environment."""
 
 import hashlib
 import importlib.metadata

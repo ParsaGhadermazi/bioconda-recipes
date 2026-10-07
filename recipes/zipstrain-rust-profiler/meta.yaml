@@ -39,8 +39,6 @@ requirements:
 test:
   imports:
     - zipstrain_rust_profiler
-  files:
-    - diagnose_parity.py
   source_files:
     - tests/data
     - tests/test_profile_parity.py
@@ -49,7 +47,6 @@ test:
   commands:
     - command -v zipstrain-rust-profiler
     - python -c "from zipstrain.profile_backends import load_backend; assert load_backend('rust_profiler').API_VERSION == 1"
-    - python diagnose_parity.py
 
 about:
   home: https://github.com/OlmLab/ZipStrain
